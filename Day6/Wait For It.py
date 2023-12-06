@@ -1,6 +1,3 @@
-import re
-from functools import reduce
-
 fs = open('Day6/data.txt', 'r')
 Lines = fs.readlines()
 
@@ -47,10 +44,9 @@ distances = int(distances)
 #    for holdTime in range(times[raceNum]):
 #        if (willBeatDistance(holdTime, times[raceNum], distances[raceNum])):
 #            winningRaceCnt = winningRaceCnt + 1
-#    allRaceValues.append(winningRaceCnt) """
+#    allRaceValues.append(winningRaceCnt)
 
 #Part 2
-allRaceValues = []
 winningRaceCnt = 0
 for holdTime in range(times):
     if (willBeatDistance(holdTime, times, distances)):
